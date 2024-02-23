@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"npdma\startup_stm32f103xb.o"
+"npdma\main.o"
+"npdma\stm32f1xx_it.o"
+"npdma\stm32f1xx_hal_msp.o"
+"npdma\ws2812_led.o"
+"npdma\battleship.o"
+"npdma\stm32f1xx_hal_gpio_ex.o"
+"npdma\stm32f1xx_hal_tim.o"
+"npdma\stm32f1xx_hal_tim_ex.o"
+"npdma\stm32f1xx_hal.o"
+"npdma\stm32f1xx_hal_rcc.o"
+"npdma\stm32f1xx_hal_rcc_ex.o"
+"npdma\stm32f1xx_hal_gpio.o"
+"npdma\stm32f1xx_hal_dma.o"
+"npdma\stm32f1xx_hal_cortex.o"
+"npdma\stm32f1xx_hal_pwr.o"
+"npdma\stm32f1xx_hal_flash.o"
+"npdma\stm32f1xx_hal_flash_ex.o"
+"npdma\stm32f1xx_hal_exti.o"
+"npdma\stm32f1xx_hal_uart.o"
+"npdma\system_stm32f1xx.o"
+--strict --scatter "npdma\npdma.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "npdma.map" -o npdma\npdma.axf
